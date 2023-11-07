@@ -1,110 +1,98 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header title={SITE_TITLE} />
-		<img src="campus.png" class="aspect-w-16 aspect-h-9" alt="" />
-		<main>
-			<div
-				class="text-2xl my-8 flex items-center justify-center flex-col text-center"
-			>
-				<h2>International Conference on</h2>
-				<h2>Applied Economics and Finance (ICAEF2024)</h2>
-				<h2>February 28, 2024 | BITS Pilani Hyderabad Campus</h2>
-			</div>
-			<div
-				class="flex flex-col items-center justify-center text-justify my-6"
-			>
-				<div class="px-3 text-xl sm:px-5 lg:px-36 md:px-20">
-					<div class="my-6 md:md-8">
-						<h1 class="mb-2 text-3xl text-blue-600 text-left">
-							CONFERENCE OVERVIEW
-						</h1>
-						<p>
-							The Department of Economics and Finance is
-							organizing its 5th Annual Conference on Economics
-							and Finance on February 8-9, 2024. The conference
-							provides a forum for disseminating research in all
-							areas of Economics and Finance. Papers are invited
-							on all theoretical and empirical aspects of
-							economics and finance. The conference has abest
-							paper award for papers presented by PhD students (an
-							authentication letter from the supervisor needs to
-							be submitted). Prof. Abhiroop Mukhopadhyay (ISI,
-							Delhi) and Prof. Sanjay Kallapur (ISB, Hyderabad)
-							are the confirmed speakers for the conference.
-						</p>
-					</div>
-					<div class="my-6 md:my-8">
-						<h1 class="mb-2 text-3xl text-blue-600 text-left">
-							OBJECTIVES OF THE CONFERENCE
-						</h1>
-						<p>
-							The conference aims to bring academicians, young
-							researchers, policy analysts, and industry experts
-							to share their experiences and research findings on
-							the problems, issues, prospects, and challenges in
-							the diversified field of Economics and Finance,
-							specifically on the diversities that emerged in the
-							last two decades. It also intends to offer a forum
-							for a multidisciplinary study where academicians and
-							business professionals may discuss the trends,
-							principles, issues, routines, and difficulties they
-							encounter daily and contribute to developing
-							long-term, viable solutions.
-						</p>
-					</div>
-					<div class="my-6 md:my-8">
-						<h1 class="mb-2 text-3xl text-blue-600 text-left">
-							PREVIOUS YEAR CONFERENCES
-						</h1>
-						<li class="text-purple-900 list-none">
-							<ul class="hover:text-black">
-								<a
-									href="https://web.bits-pilani.ac.in/uploads/1st%20Annual%20Conference%20Poster.pdf"
-								>
-									1. 1st Annual Conference in Economics and
-									Finance
-								</a>
-							</ul>
-							<ul class="hover:text-black">
-								<a
-									href="https://web.bits-pilani.ac.in/uploads/2nd%20Annual%20Conference-Poster.pdf"
-								>
-									2. 2nd Annual Conference in Economics and
-									Finance
-								</a>
-							</ul>
-							<ul class="hover:text-black">
-								<a
-									href="https://web.bits-pilani.ac.in/uploads/3rd%20annual%20conference%20poster.pdf"
-								>
-									3. 3rd Annual Conference in Economics and
-									Finance
-								</a>
-							</ul>
-							<ul class="hover:text-black">
-								<a
-									href="https://web.bits-pilani.ac.in/uploads/updated%20conf23%20poster.pdf"
-								>
-									4. 4th Annual Conference in Economics and
-									Finance
-								</a>
-							</ul>
-						</li>
-					</div>
-				</div>
-			</div>
-		</main>
-		<Footer />
-	</body>
-</html>
+<MainLayout>
+    <main>
+        <div
+            class="text-2xl my-8 flex items-center justify-center flex-col text-center"
+        >
+            <h2>International Conference on</h2>
+            <h2>Applied Economics and Finance (ICAEF2024)</h2>
+            <h2>February 28, 2024 | BITS Pilani Hyderabad Campus</h2>
+        </div>
+        <div
+            class="flex flex-col items-center justify-center text-justify my-6"
+        >
+            <div class="px-3 text-xl sm:px-5 lg:px-36 md:px-20">
+                <div class="my-6 md:md-8">
+                    <h1 class="mb-2 text-3xl text-blue-600 text-left">
+                        CONFERENCE OVERVIEW
+                    </h1>
+                    <p>
+                        The Department of Economics and Finance is
+                        organizing its 5th Annual Conference on Economics
+                        and Finance on February 8-9, 2024. The conference
+                        provides a forum for disseminating research in all
+                        areas of Economics and Finance. Papers are invited
+                        on all theoretical and empirical aspects of
+                        economics and finance. The conference has abest
+                        paper award for papers presented by PhD students (an
+                        authentication letter from the supervisor needs to
+                        be submitted). Prof. Abhiroop Mukhopadhyay (ISI,
+                        Delhi) and Prof. Sanjay Kallapur (ISB, Hyderabad)
+                        are the confirmed speakers for the conference.
+                    </p>
+                </div>
+                <div class="my-6 md:my-8">
+                    <h1 class="mb-2 text-3xl text-blue-600 text-left">
+                        OBJECTIVES OF THE CONFERENCE
+                    </h1>
+                    <p>
+                        The conference aims to bring academicians, young
+                        researchers, policy analysts, and industry experts
+                        to share their experiences and research findings on
+                        the problems, issues, prospects, and challenges in
+                        the diversified field of Economics and Finance,
+                        specifically on the diversities that emerged in the
+                        last two decades. It also intends to offer a forum
+                        for a multidisciplinary study where academicians and
+                        business professionals may discuss the trends,
+                        principles, issues, routines, and difficulties they
+                        encounter daily and contribute to developing
+                        long-term, viable solutions.
+                    </p>
+                </div>
+                <div class="my-6 md:my-8">
+                    <h1 class="mb-2 text-3xl text-blue-600 text-left">
+                        PREVIOUS YEAR CONFERENCES
+                    </h1>
+                    <li class="text-purple-900 list-none">
+                        <ul class="hover:text-black">
+                            <a
+                                href="https://web.bits-pilani.ac.in/uploads/1st%20Annual%20Conference%20Poster.pdf"
+                            >
+                                1. 1st Annual Conference in Economics and
+                                Finance
+                            </a>
+                        </ul>
+                        <ul class="hover:text-black">
+                            <a
+                                href="https://web.bits-pilani.ac.in/uploads/2nd%20Annual%20Conference-Poster.pdf"
+                            >
+                                2. 2nd Annual Conference in Economics and
+                                Finance
+                            </a>
+                        </ul>
+                        <ul class="hover:text-black">
+                            <a
+                                href="https://web.bits-pilani.ac.in/uploads/3rd%20annual%20conference%20poster.pdf"
+                            >
+                                3. 3rd Annual Conference in Economics and
+                                Finance
+                            </a>
+                        </ul>
+                        <ul class="hover:text-black">
+                            <a
+                                href="https://web.bits-pilani.ac.in/uploads/updated%20conf23%20poster.pdf"
+                            >
+                                4. 4th Annual Conference in Economics and
+                                Finance
+                            </a>
+                        </ul>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </main>
+</MainLayout>
