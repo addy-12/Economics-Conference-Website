@@ -1,28 +1,25 @@
 ---
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
-import BaseHead from "../components/BaseHead.astro";
 import MainLayout from "../layouts/MainLayout.astro";
+import { Link } from "lucide-react";
 ---
 
-<MainLayout>
+<MainLayout title="Leadership">
     <div
     class="text-2xl my-8 flex items-center justify-center flex-col text-center"
 >
-    <h1 class="text-blue-800 text-3xl mb-8">LEADERSHIP</h1>
+    <h1 class="text-blue-800 text-3xl mb-8" data-aos="fade-up">LEADERSHIP</h1>
     <div
         class="flex flex-col px-5 md:px-[3vh] lg:px-[12vh] xl:px-[32vh] space-y-10"
     >
         <div class="flex flex-col md:flex-row space-x-4">
-            <div class="md:w-1/2 flex items-center justify-center">
+            <div class="md:w-1/2 flex items-center justify-center" data-aos="fade-up">
                 <img
                     src="https://discovery.bits-pilani.ac.in/ICAEF2023/img/patrons/V-Ramgopal-Rao.jpg"
                     alt="prof"
                     class="px-10 py-5 bg-white max-w-[324px] lg:max-w-[384px] h-auto rounded-2xl"
                 />
             </div>
-            <div class="md:w-1/2">
+            <div class="md:w-1/2 flex flex-col justify-center items-center" data-aos="fade-up">
                 <h1 class="text-2xl mt-4">Prof. V Ramgopal Rao</h1>
                 <h2 class="text-blue-600 text-xl mb-2">
                     Vice Chancellor, BITS Pilani
@@ -39,21 +36,24 @@ import MainLayout from "../layouts/MainLayout.astro";
                     Bombay and IIT Delhi.
                 </p>
                 <p class="text-lg text-purple-800 mt-3">
-                    <a href=" https://web.iitd.ac.in/~rrao/index.html" target="_blank">
-                        Click here for more information
+                    <a href=" https://web.iitd.ac.in/~rrao/index.html" target="_blank" class="flex">
+                        <Link size={12}/>
+                        
+                            Click here for more information
+                        
                     </a>
                 </p>
             </div>
         </div>
-        <div class="flex flex-col md:flex-row space-x-4">
-            <div class="md:w-1/2 flex items-center justify-center">
+        <div class="flex flex-col md:flex-row space-x-4" >
+            <div class="md:w-1/2 flex items-center justify-center" data-aos="fade-up">
                 <img
                     src="https://www.mobilityindia.com/wp-content/uploads/2022/01/G.sundar-2-450x369.jpg"
                     alt="prof"
-                    class="px-10 py-5 bg-white max-w-[324px] max-h-auto rounded-2xl"
+                    class="px-10 py-5 bg-white max-w-[324px] lg:max-w-[384px] max-h-auto rounded-2xl"
                 />
             </div>
-            <div class="md:w-1/2">
+            <div class="md:w-1/2" data-aos="fade-up">
                 <h1 class="text-2xl mt-4">Prof. G. Sundar</h1>
                 <h2 class="text-blue-600 text-xl mb-2">
                     Director, BITS Pilani Hyderabad Campus
@@ -87,16 +87,3 @@ import MainLayout from "../layouts/MainLayout.astro";
     </div>
 </div>
 </MainLayout>
-
-<!-- <!doctype html>
-<html>
-    <head>
-        <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-    </head>
-    <body>
-        <Header title={SITE_TITLE} />
-        <img src="campus.png" class="aspect-w-16 aspect-h-9" alt="" />
-       
-        <Footer />
-    </body>
-</html> -->

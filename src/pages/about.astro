@@ -1,18 +1,14 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<MainLayout>
+<MainLayout title="About">
 	<main>
 		<div
 			class="flex flex-col items-center justify-center text-justify my-6"
 		>
 			<div class="px-3 text-xl sm:px-5 lg:px-36 md:px-20">
-				<div class="my-6 md:md-8">
+				<div class="my-6 md:md-8" data-aos="fade-up">
 					<h1 class="mb-4 text-3xl text-blue-600 text-left">
 						ABOUT THE CAMPUS
 					</h1>
@@ -86,7 +82,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 						tomorrow.
 					</p>
 				</div>
-				<div class="my-6 md:my-8">
+				<div class="my-6 md:my-8" data-aos="fade-up">
 					<h1 class="mb-2 text-3xl text-blue-600 text-left">
 						ABOUT THE DEPARTMENT
 					</h1>
@@ -110,7 +106,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 						we request you to go through this website.
 					</p>
 				</div>
-				<div class="my-6 md:my-8">
+				<div class="my-6 md:my-8" data-aos="fade-up">
 					<h1 class="mb-2 text-3xl text-blue-600 text-left">
 						ECONOMIC ASSOCIATION
 					</h1>
@@ -147,15 +143,3 @@ import MainLayout from "../layouts/MainLayout.astro";
 	</main>
 </MainLayout>
 
-<!-- <!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header title={SITE_TITLE} />
-		<img src="campus.png" class="aspect-w-16 aspect-h-9" alt="" />
-		
-		<Footer />
-	</body>
-</html> -->

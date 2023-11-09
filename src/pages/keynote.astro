@@ -1,24 +1,25 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import { Link } from "lucide-react";
 ---
 
-<MainLayout>
+<MainLayout title="Keynote">
     <main
         class="text-2xl my-8 flex items-center justify-center flex-col text-center"
     >
-        <h1 class="text-blue-800 text-3xl mb-8">KEYNOTE SPEAKERS</h1>
+        <h1 class="text-blue-800 text-3xl mb-8" data-aos="fade-up">KEYNOTE SPEAKERS</h1>
         <div
             class="flex flex-col px-5 md:px-[3vh] lg:px-[12vh] xl:px-[32vh] space-y-10"
         >
             <div class="flex flex-col md:flex-row space-x-4">
-                <div class="md:w-1/2 flex items-center justify-center">
+                <div class="md:w-1/2 flex items-center justify-center" data-aos="fade-up">
                     <img
                         src="https://discovery.bits-pilani.ac.in/ICAEF2023/img/patrons/V-Ramgopal-Rao.jpg"
                         alt="prof"
-                        class="px-10 py-5 bg-white max-w-[384px] h-auto rounded-2xl"
+                        class="px-10 py-5 bg-white max-w-[324px] lg:max-w-[384px] h-auto rounded-2xl"
                     />
                 </div>
-                <div class="md:w-1/2">
+                <div class="md:w-1/2 flex flex-col justify-center items-center" data-aos="fade-up">
                     <h1 class="text-2xl mt-4">Prof. Sanjay Kallapur</h1>
                     <h2 class="text-blue-600 text-xl mb-2">ISB, Hyderabad</h2>
                     <p class="text-lg text-left">
@@ -53,21 +54,23 @@ import MainLayout from "../layouts/MainLayout.astro";
                         <a
                             href="https://www.isb.edu/en/research-thought-leadership/faculty/faculty-directory/sanjay-kallapur.html"
                             target="_blank"
+                            class="flex"
                         >
+                            <Link size={12}/>   
                             For more information, click here
                         </a>
                     </p>
                 </div>
             </div>
             <div class="flex flex-col md:flex-row space-x-4">
-                <div class="md:w-1/2 flex items-center justify-center">
+                <div class="md:w-1/2 flex items-center justify-center" data-aos="fade-up">
                     <img
                         src="https://www.mobilityindia.com/wp-content/uploads/2022/01/G.sundar-2-450x369.jpg"
                         alt="prof"
-                        class="px-10 py-5 bg-white max-w-[384px] max-h-auto rounded-2xl"
+                        class="px-10 py-5 bg-white max-w-[324px] lg:max-w-[384px] max-h-auto rounded-2xl"
                     />
                 </div>
-                <div class="md:w-1/2">
+                <div class="md:w-1/2 flex flex-col items-center justify-center" data-aos="fade-up">
                     <h1 class="text-2xl mt-4">Prof. Abhiroop Mukhopadhyay</h1>
                     <h2 class="text-blue-600 text-xl mb-2">ISI Delhi</h2>
                     <p class="text-lg text-left">
@@ -103,7 +106,9 @@ import MainLayout from "../layouts/MainLayout.astro";
                         <a
                             href="https://sites.google.com/view/abhiroop/home"
                             target="_blank"
+                            class="flex"
                         >
+                        <Link size={12}/>
                             For more information, click here
                         </a>
                     </p>
