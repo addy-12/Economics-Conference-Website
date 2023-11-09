@@ -7,7 +7,7 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://icaef-2024.github.io',
-  base: '/Economics-Conference-Website',
+  site: 'https://shre-d.github.io',
+  base: '/',
   integrations: [mdx(), sitemap(), tailwind(), react()]
 });
