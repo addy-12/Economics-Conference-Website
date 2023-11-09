@@ -1,6 +1,5 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
 import Navbar from '../components/navbar'
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
@@ -22,13 +21,18 @@ import {ViewTransitions} from 'astro:transitions'
         <ViewTransitions/>
 	</head>
 	<body>
-		<Navbar client:visible />
+		<script>
+			import AOS from 'aos'
+			import 'aos/dist/aos.css';
+			AOS.init({ duration: 800, easing: "ease-out-cubic", once: true, offset: 50 });
+		</script>
+		<Navbar client:visible />	
 		<div class="pt-16">
 			<img src="campus.png" class="aspect-w-16 aspect-h-9" alt="" />       
 		<slot>
             Economics Conference website
         </slot>
 		</div>
-		<Footer />
+		<Footer />		
 	</body>
 </html>
