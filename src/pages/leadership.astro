@@ -3,9 +3,92 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import BaseHead from "../components/BaseHead.astro";
+import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<!doctype html>
+<MainLayout>
+    <div
+    class="text-2xl my-8 flex items-center justify-center flex-col text-center"
+>
+    <h1 class="text-blue-800 text-3xl mb-8">LEADERSHIP</h1>
+    <div
+        class="flex flex-col px-5 md:px-[3vh] lg:px-[12vh] xl:px-[32vh] space-y-10"
+    >
+        <div class="flex flex-col md:flex-row space-x-4">
+            <div class="md:w-1/2 flex items-center justify-center">
+                <img
+                    src="https://discovery.bits-pilani.ac.in/ICAEF2023/img/patrons/V-Ramgopal-Rao.jpg"
+                    alt="prof"
+                    class="px-10 py-5 bg-white max-w-[324px] lg:max-w-[384px] h-auto rounded-2xl"
+                />
+            </div>
+            <div class="md:w-1/2">
+                <h1 class="text-2xl mt-4">Prof. V Ramgopal Rao</h1>
+                <h2 class="text-blue-600 text-xl mb-2">
+                    Vice Chancellor, BITS Pilani
+                </h2>
+                <p class="text-lg text-left">
+                    Presently, Prof. V. Ramgopal Rao is the Group
+                    Vice-Chancellor for the Birla Institute of
+                    Technology & Science (BITS) Pilani. The institute
+                    has five campuses, located in Pilani, Hyderabad,
+                    Goa, Dubai and Mumbai. Prior to joining the BITS
+                    Group in 2023, Prof. Rao had served as the Director
+                    of IIT Delhi for 6 years during 2016-2021 and as a
+                    Chair Professor for Nanoelectronics at both IIT
+                    Bombay and IIT Delhi.
+                </p>
+                <p class="text-lg text-purple-800 mt-3">
+                    <a href=" https://web.iitd.ac.in/~rrao/index.html" target="_blank">
+                        Click here for more information
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row space-x-4">
+            <div class="md:w-1/2 flex items-center justify-center">
+                <img
+                    src="https://www.mobilityindia.com/wp-content/uploads/2022/01/G.sundar-2-450x369.jpg"
+                    alt="prof"
+                    class="px-10 py-5 bg-white max-w-[324px] max-h-auto rounded-2xl"
+                />
+            </div>
+            <div class="md:w-1/2">
+                <h1 class="text-2xl mt-4">Prof. G. Sundar</h1>
+                <h2 class="text-blue-600 text-xl mb-2">
+                    Director, BITS Pilani Hyderabad Campus
+                </h2>
+                <p class="text-lg text-left">
+                    G Sundar joined the Chemistry Department at BITS
+                    Pilani in 1987, was designated Professor in 2000,
+                    and is now Senior Professor. He teaches courses in
+                    Thermodynamics, Quantum Chemistry, and Chemical
+                    Instrumentation.
+                </p>
+                <p class="text-lg text-left">
+                    As Director (Off Campus Programmes and Industry
+                    Engagement) since 2014, a responsibility he
+                    continues to hold, and earlier as Deputy Director,
+                    Prof. Sundar has been leading a comprehensive
+                    transformation of the Work Integrated Learning
+                    Programmes. He was also associated closely with
+                    helping direct and manage the expansion of the
+                    Practice School programme over the years. Earlier,
+                    for several years he was associated with the Student
+                    Welfare Division in the Pilani campus, as Chief
+                    Warden, and then as Dean.
+                </p>    
+                <p class="text-lg text-left">
+                    Prof. Sundar took charge as Director of the
+                    Hyderabad campus on 17 July, 2016.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</MainLayout>
+
+<!-- <!doctype html>
 <html>
     <head>
         <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
@@ -13,85 +96,7 @@ import BaseHead from "../components/BaseHead.astro";
     <body>
         <Header title={SITE_TITLE} />
         <img src="campus.png" class="aspect-w-16 aspect-h-9" alt="" />
-        <div
-            class="text-2xl my-8 flex items-center justify-center flex-col text-center"
-        >
-            <h1 class="text-blue-800 text-3xl mb-8">LEADERSHIP</h1>
-            <div
-                class="flex flex-col px-5 md:px-[3vh] lg:px-[12vh] xl:px-[32vh] space-y-10"
-            >
-                <div class="flex flex-col md:flex-row space-x-4">
-                    <div class="md:w-1/2 flex items-center justify-center">
-                        <img
-                            src="https://discovery.bits-pilani.ac.in/ICAEF2023/img/patrons/V-Ramgopal-Rao.jpg"
-                            alt="prof"
-                            class="px-10 py-5 bg-white max-w-[384px] h-auto rounded-2xl"
-                        />
-                    </div>
-                    <div class="md:w-1/2">
-                        <h1 class="text-2xl mt-4">Prof. V Ramgopal Rao</h1>
-                        <h2 class="text-blue-600 text-xl mb-2">
-                            Vice Chancellor, BITS Pilani
-                        </h2>
-                        <p class="text-lg text-left">
-                            Presently, Prof. V. Ramgopal Rao is the Group
-                            Vice-Chancellor for the Birla Institute of
-                            Technology & Science (BITS) Pilani. The institute
-                            has five campuses, located in Pilani, Hyderabad,
-                            Goa, Dubai and Mumbai. Prior to joining the BITS
-                            Group in 2023, Prof. Rao had served as the Director
-                            of IIT Delhi for 6 years during 2016-2021 and as a
-                            Chair Professor for Nanoelectronics at both IIT
-                            Bombay and IIT Delhi.
-                        </p>
-                        <p class="text-lg text-purple-800 mt-3">
-                            <a href=" https://web.iitd.ac.in/~rrao/index.html" target="_blank">
-                                Click here for more information
-                            </a>
-                        </p>
-                    </div>
-                </div>
-                <div class="flex flex-col md:flex-row space-x-4">
-                    <div class="md:w-1/2 flex items-center justify-center">
-                        <img
-                            src="https://www.mobilityindia.com/wp-content/uploads/2022/01/G.sundar-2-450x369.jpg"
-                            alt="prof"
-                            class="px-10 py-5 bg-white max-w-[384px] max-h-auto rounded-2xl"
-                        />
-                    </div>
-                    <div class="md:w-1/2">
-                        <h1 class="text-2xl mt-4">Prof. G. Sundar</h1>
-                        <h2 class="text-blue-600 text-xl mb-2">
-                            Director, BITS Pilani Hyderabad Campus
-                        </h2>
-                        <p class="text-lg text-left">
-                            G Sundar joined the Chemistry Department at BITS
-                            Pilani in 1987, was designated Professor in 2000,
-                            and is now Senior Professor. He teaches courses in
-                            Thermodynamics, Quantum Chemistry, and Chemical
-                            Instrumentation.
-                        </p>
-                        <p class="text-lg text-left">
-                            As Director (Off Campus Programmes and Industry
-                            Engagement) since 2014, a responsibility he
-                            continues to hold, and earlier as Deputy Director,
-                            Prof. Sundar has been leading a comprehensive
-                            transformation of the Work Integrated Learning
-                            Programmes. He was also associated closely with
-                            helping direct and manage the expansion of the
-                            Practice School programme over the years. Earlier,
-                            for several years he was associated with the Student
-                            Welfare Division in the Pilani campus, as Chief
-                            Warden, and then as Dean.
-                        </p>    
-                        <p class="text-lg text-left">
-                            Prof. Sundar took charge as Director of the
-                            Hyderabad campus on 17 July, 2016.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+       
         <Footer />
     </body>
-</html>
+</html> -->

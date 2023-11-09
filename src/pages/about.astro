@@ -3,9 +3,151 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<!doctype html>
+<MainLayout>
+	<main>
+		<div
+			class="flex flex-col items-center justify-center text-justify my-6"
+		>
+			<div class="px-3 text-xl sm:px-5 lg:px-36 md:px-20">
+				<div class="my-6 md:md-8">
+					<h1 class="mb-4 text-3xl text-blue-600 text-left">
+						ABOUT THE CAMPUS
+					</h1>
+					<p>
+						Birla Institute of Technology and Science, Pilani -
+						Hyderabad campus is one of the premier technical and
+						science institutes of higher learning in India. It
+						was established by Birla Institute of Technology and
+						Science, Pilani (Rajasthan) as one of its latest
+						campuses in the year 2008 with the first batch
+						graduating in the year 2012. BITS, Pilani is one of
+						India’s top technical and science universities
+						established under Sec. 3 of the UGC act.
+					</p>
+					<br />
+					<p>
+						The sprawling campus is built amidst lush greenery
+						spreading over 200 acres of land at Jawahar Nagar,
+						Shameerpet, Hyderabad. Surrounded by natural beauty,
+						the campus is about 70 kilometers away from Rajiv
+						Gandhi International Airport, Shamshabad and 27
+						kilometers from Secunderabad railway station. The
+						campus is easily accessible by road with a bus stop
+						just outside the campus. Public transport (route#
+						212) runs every one hour from Secunderabad to the
+						campus. The campus is in close proximity to many
+						schools, medical facilities, and recreational
+						centers.
+					</p>
+					<br />
+					<p>
+						The campus is built with state-of-the-art
+						infrastructure without affecting the scenic beauty
+						of the area. Modern laboratories, well-furnished
+						classrooms, lecture theatre complexes, student
+						activity center, auditorium, playground and modern
+						ICT infrastructure, all come together to make BITS
+						Pilani, Hyderabad campus a well-equipped campus.
+					</p>
+					<br />
+					<p>
+						Around 750 bright minds are admitted every year into
+						first degree, higher degree and doctoral programmes
+						of the institute through a single entrance test
+						conducted by BITS, Pilani. Being a campus of BITS,
+						Pilani, Hyderabad campus follows the same
+						curriculum, teaching methodologies and educational
+						practices of its’ parent campus. BITS, Pilani,
+						Hyderabad campus is fully residential, housing over
+						3200 students, around 170 faculty members and 160
+						technical and support staff. The teaching faculty
+						brings with them extensive research, teaching and
+						industry experience to offer comprehensive education
+						to students. Currently around 65 research projects
+						are ongoing in the campus, most of which are
+						supported by prominent funding agencies from India
+						and abroad.
+					</p>
+					<br />
+					<p>
+						Campus life is vibrant and stimulating. Student
+						calendars are filled with a healthy mix of
+						extracurricular activities through various clubs and
+						departments. There is a culture of freedom coupled
+						with a holistic environment for multidimensional
+						growth of a student personality. Over the past few
+						years, students have been placed at multinational
+						companies, government organizations, and research
+						institutes across the globe. The students of the
+						campus are truly ready to become the innovators of
+						tomorrow.
+					</p>
+				</div>
+				<div class="my-6 md:my-8">
+					<h1 class="mb-2 text-3xl text-blue-600 text-left">
+						ABOUT THE DEPARTMENT
+					</h1>
+					<p>
+						The Economics and Finance Department at BITS Pilani
+						- Hyderabad Campus offers MSc (Hons) Economics as a
+						first degree. Minor in Finance and PhD programme.
+						The diversity of specializations of the departmental
+						faculty has promoted multi-faceted research at the
+						Department and has brought a certain depth to the
+						courses as well. Along with research, the Department
+						recognizes the growing demand for trained manpower
+						in education, industry, government and other sectors
+						as well as nurturing future researchers and
+						specialists in Economics, Finance and Management.
+						The teaching methodology pursues to provide students
+						with a strong conceptual foundation and to create a
+						continuous interest and involvement with the real
+						life applications of Economics, Finance and
+						Management. For more details about our Department,
+						we request you to go through this website.
+					</p>
+				</div>
+				<div class="my-6 md:my-8">
+					<h1 class="mb-2 text-3xl text-blue-600 text-left">
+						ECONOMIC ASSOCIATION
+					</h1>
+					<p>
+						The Economics Association, as the name suggests, is
+						the association for the MSc Economics students at
+						Hyderabad campus. The primary aim of the association
+						is to inculcate and nurture an interest in the
+						economics and finance world among all students on
+						campus, not just those studying economics. Towards
+						this end, various events are held, both as part of
+						ATMOS, as well as in general. Events conducted
+						during ATMOS include Courtroom, Arthashastra – The
+						Business Quiz and workshops on finance. In addition
+						to this, there are several guest talks and workshops
+						conducted throughout the year by some of the best
+						names in the field of finance and economics in the
+						country and abroad. Panel discussions are also held
+						on regular basis to keep abreast with various
+						developments and be familiar with the different
+						point of views and perceptions. The association also
+						maintains a blog, where articles written by our
+						students and guest contributions are posted
+						regularly. In addition to this, the association also
+						conceived and organized the flagship edition of its
+						financial conclave, Finnovate, in February 2017.
+						Finnovate will continue as an annual event with
+						eminent speakers talking on contemporary issues and
+						exciting quizzes/competitions for students.
+					</p>
+				</div>
+			</div>
+		</div>
+	</main>
+</MainLayout>
+
+<!-- <!doctype html>
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
@@ -13,144 +155,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 	<body>
 		<Header title={SITE_TITLE} />
 		<img src="campus.png" class="aspect-w-16 aspect-h-9" alt="" />
-		<main>
-			<div
-				class="flex flex-col items-center justify-center text-justify my-6"
-			>
-				<div class="px-3 text-xl sm:px-5 lg:px-36 md:px-20">
-					<div class="my-6 md:md-8">
-						<h1 class="mb-4 text-3xl text-blue-600 text-left">
-							ABOUT THE CAMPUS
-						</h1>
-						<p>
-							Birla Institute of Technology and Science, Pilani -
-							Hyderabad campus is one of the premier technical and
-							science institutes of higher learning in India. It
-							was established by Birla Institute of Technology and
-							Science, Pilani (Rajasthan) as one of its latest
-							campuses in the year 2008 with the first batch
-							graduating in the year 2012. BITS, Pilani is one of
-							India’s top technical and science universities
-							established under Sec. 3 of the UGC act.
-						</p>
-						<br />
-						<p>
-							The sprawling campus is built amidst lush greenery
-							spreading over 200 acres of land at Jawahar Nagar,
-							Shameerpet, Hyderabad. Surrounded by natural beauty,
-							the campus is about 70 kilometers away from Rajiv
-							Gandhi International Airport, Shamshabad and 27
-							kilometers from Secunderabad railway station. The
-							campus is easily accessible by road with a bus stop
-							just outside the campus. Public transport (route#
-							212) runs every one hour from Secunderabad to the
-							campus. The campus is in close proximity to many
-							schools, medical facilities, and recreational
-							centers.
-						</p>
-						<br />
-						<p>
-							The campus is built with state-of-the-art
-							infrastructure without affecting the scenic beauty
-							of the area. Modern laboratories, well-furnished
-							classrooms, lecture theatre complexes, student
-							activity center, auditorium, playground and modern
-							ICT infrastructure, all come together to make BITS
-							Pilani, Hyderabad campus a well-equipped campus.
-						</p>
-						<br />
-						<p>
-							Around 750 bright minds are admitted every year into
-							first degree, higher degree and doctoral programmes
-							of the institute through a single entrance test
-							conducted by BITS, Pilani. Being a campus of BITS,
-							Pilani, Hyderabad campus follows the same
-							curriculum, teaching methodologies and educational
-							practices of its’ parent campus. BITS, Pilani,
-							Hyderabad campus is fully residential, housing over
-							3200 students, around 170 faculty members and 160
-							technical and support staff. The teaching faculty
-							brings with them extensive research, teaching and
-							industry experience to offer comprehensive education
-							to students. Currently around 65 research projects
-							are ongoing in the campus, most of which are
-							supported by prominent funding agencies from India
-							and abroad.
-						</p>
-						<br />
-						<p>
-							Campus life is vibrant and stimulating. Student
-							calendars are filled with a healthy mix of
-							extracurricular activities through various clubs and
-							departments. There is a culture of freedom coupled
-							with a holistic environment for multidimensional
-							growth of a student personality. Over the past few
-							years, students have been placed at multinational
-							companies, government organizations, and research
-							institutes across the globe. The students of the
-							campus are truly ready to become the innovators of
-							tomorrow.
-						</p>
-					</div>
-					<div class="my-6 md:my-8">
-						<h1 class="mb-2 text-3xl text-blue-600 text-left">
-							ABOUT THE DEPARTMENT
-						</h1>
-						<p>
-							The Economics and Finance Department at BITS Pilani
-							- Hyderabad Campus offers MSc (Hons) Economics as a
-							first degree. Minor in Finance and PhD programme.
-							The diversity of specializations of the departmental
-							faculty has promoted multi-faceted research at the
-							Department and has brought a certain depth to the
-							courses as well. Along with research, the Department
-							recognizes the growing demand for trained manpower
-							in education, industry, government and other sectors
-							as well as nurturing future researchers and
-							specialists in Economics, Finance and Management.
-							The teaching methodology pursues to provide students
-							with a strong conceptual foundation and to create a
-							continuous interest and involvement with the real
-							life applications of Economics, Finance and
-							Management. For more details about our Department,
-							we request you to go through this website.
-						</p>
-					</div>
-					<div class="my-6 md:my-8">
-						<h1 class="mb-2 text-3xl text-blue-600 text-left">
-							ECONOMIC ASSOCIATION
-						</h1>
-						<p>
-							The Economics Association, as the name suggests, is
-							the association for the MSc Economics students at
-							Hyderabad campus. The primary aim of the association
-							is to inculcate and nurture an interest in the
-							economics and finance world among all students on
-							campus, not just those studying economics. Towards
-							this end, various events are held, both as part of
-							ATMOS, as well as in general. Events conducted
-							during ATMOS include Courtroom, Arthashastra – The
-							Business Quiz and workshops on finance. In addition
-							to this, there are several guest talks and workshops
-							conducted throughout the year by some of the best
-							names in the field of finance and economics in the
-							country and abroad. Panel discussions are also held
-							on regular basis to keep abreast with various
-							developments and be familiar with the different
-							point of views and perceptions. The association also
-							maintains a blog, where articles written by our
-							students and guest contributions are posted
-							regularly. In addition to this, the association also
-							conceived and organized the flagship edition of its
-							financial conclave, Finnovate, in February 2017.
-							Finnovate will continue as an annual event with
-							eminent speakers talking on contemporary issues and
-							exciting quizzes/competitions for students.
-						</p>
-					</div>
-				</div>
-			</div>
-		</main>
+		
 		<Footer />
 	</body>
-</html>
+</html> -->
