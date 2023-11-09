@@ -16,6 +16,7 @@
     "@astrojs/rss": "^3.0.0",
     "@astrojs/sitemap": "^3.0.3",
     "@astrojs/tailwind": "^5.0.2",
+    "@astrojs/vercel": "^5.2.0",
     "@types/react": "^18.2.35",
     "@types/react-dom": "^18.2.14",
     "aos": "^3.0.0-beta.6",
