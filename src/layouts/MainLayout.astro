@@ -1,21 +1,34 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
+import Navbar from '../components/navbar'
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+
+type Props = {
+    title? : string,
+    description? : string,
+}
+
+const {title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.props as Props
+import {ViewTransitions} from 'astro:transitions'
+
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead title={title} description={description} />
+        <ViewTransitions/>
 	</head>
 	<body>
-		<Header title={SITE_TITLE} />
-		<img src="campus.png" class="aspect-w-16 aspect-h-9" alt="" />
+		<Navbar client:visible />
+		<div class="pt-16">
+			<img src="campus.png" class="aspect-w-16 aspect-h-9" alt="" />       
 		<slot>
             Economics Conference website
         </slot>
+		</div>
 		<Footer />
 	</body>
 </html>
