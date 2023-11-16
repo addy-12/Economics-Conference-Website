@@ -34,13 +34,13 @@ export default function Navbar() {
                                 <a className="hover:text-gray-600" href="/leadership">Leadership</a>
                             </ul>
                             <ul>
-                                <a className="hover:text-gray-600" href="/keynote">Keynote</a>
+                                <a className="hover:text-gray-600" href="/speakers">Speakers</a>
                             </ul>
                             <ul>
                                 <a className="hover:text-gray-600" href="/submissions">Submission</a>
                             </ul>
                             <ul>
-                                <a className="hover:text-gray-600" href="/contact">To Contact</a>
+                                <a className="hover:text-gray-600" href="/registration">Registration</a>
                             </ul>
                         </li>
                         <div className='flex'>
@@ -74,13 +74,13 @@ function MenuDisplay() {
                     <a className="hover:text-gray-600" href="/leadership">Leadership</a>
                 </ul>
                 <ul className=''>
-                    <a className="hover:text-gray-600" href="/keynote">Keynote</a>
+                    <a className="hover:text-gray-600" href="/speakers">Speakers</a>
                 </ul>
                 <ul className=''>
                     <a className="hover:text-gray-600" href="/submissions">Submission</a>
                 </ul>
                 <ul className=''>
-                    <a className="hover:text-gray-600" href="/contact">To Contact</a>
+                    <a className="hover:text-gray-600" href="/registration">Registration</a>
                 </ul>
             </li>
         </div>
