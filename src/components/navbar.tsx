@@ -45,7 +45,7 @@ export default function Navbar() {
                         </li>
                         <div className='flex'>
                             <div>
-                                <img src="g20.png" width={80} alt="g20" />
+                                <img src="g20.png" className='opacity-0' width={80} alt="g20" />
                             </div>
                             <div onClick={handleClick} className='lg:hidden p-2 rounded-md cursor-pointer bg-slate-300 hover:bg-slate-200'>
                                 <Menu />

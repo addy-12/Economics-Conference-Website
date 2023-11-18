@@ -4,15 +4,15 @@ import MainLayout from "../layouts/MainLayout.astro";
 
 <MainLayout title="Submissions">
     <main
-        class="flex flex-col px-5 md:px-[3vh] lg:px-[12vh] xl:px-[32vh] space-y-10 my-8"
+        class="flex flex-col px-5 md:px-[3vh] lg:px-[12vh] xl:px-[32vh] space-y-10 my-8 font-medium"
     >
         <div>
             <div
                 class="pt-1 px-8 pb-9 bg-neutral-100 rounded-2xl"
                 data-aos="fade-up"
             >
-                <p class="text-2xl my-8">
-                    Submissions guidelines
+                <p class="text-2xl my-8 font-medium">
+                    Submission guidelines
 
                     <ol class="text-lg">
                         <li>
@@ -22,19 +22,26 @@ import MainLayout from "../layouts/MainLayout.astro";
                         <li>
                             2. Papers that can’t be accommodated in the
                             technical sessions will be considered for poster
-                            sessionn. Authors need to indicate whether they want
-                            their papers to be considered for the poster session
-                            at the time of submission.
+                            session. Authors need to indicate whether they would
+                            want their papers to be considered for the poster
+                            session at the time of submission.
                         </li>
-                        <li>3. Submitted papers must be unpublished.</li>
+                        <li>
+                            3. Submitted papers must be unpublished and original
+                            work.
+                        </li>
                         <li>
                             4. Please submit a pdf version of the paper only.
                         </li>
-                        <li>5. Please use the link to submit your paper.</li>
+                        <li>
+                            5. Please use the link to submit your paper. The
+                            papers submitted through other channels will not be
+                            considered.
+                        </li>
                     </ol>
                 </p>
             </div>
-            <h1
+            <!-- <h1
                 class="text-3xl text-blue-800 my-4 ml-3 lg:ml-0"
                 data-aos="fade-up"
             >
@@ -58,7 +65,7 @@ import MainLayout from "../layouts/MainLayout.astro";
                         anywhere before.
                     </p>
                 </p>
-            </div>
+            </div> -->
             <h1
                 class="text-3xl text-blue-800 my-4 ml-3 lg:ml-0"
                 data-aos="fade-up"
@@ -71,7 +78,7 @@ import MainLayout from "../layouts/MainLayout.astro";
             >
                 <p class="text-xl my-6">
                     Before submitting the full paper, read the following terms
-                    and conditions. Submission of full paper means you agree the
+                    and conditions. Submission of full paper means you agree to the
                     following terms and conditions.
                 </p>
                 <ol class="text-lg mt-2">
@@ -88,7 +95,7 @@ import MainLayout from "../layouts/MainLayout.astro";
                         submitted work.
                     </li>
                     <li>
-                        &gt; Author (s) are requested to mention all possible
+                        &gt; Author(s) are requested to mention all possible
                         conflicts of interest, whether or not directly related
                         to the subject of the paper, in the appropriate section
                         of the manuscript.
@@ -100,7 +107,7 @@ import MainLayout from "../layouts/MainLayout.astro";
                         submitted document.
                     </li>
                 </ol>
-                <p class="my-4 text-xl">Submission Link</p>
+                <p class="my-4 text-xl font-medium">Submission Link</p>
                 <p>
                     <a
                         href="https://docs.google.com/forms/d/e/1FAIpQLSfmzCPg_55LPN8dmu3yU9lgiG5or0C7aNLa8z7AKYNpfctrlA/viewform"
@@ -110,14 +117,14 @@ import MainLayout from "../layouts/MainLayout.astro";
                         ACEF 2024 Submission Link
                     </a>
                 </p>
-                <p class="my-4 text-xl">Important Dates</p>
+                <p class="my-4 text-xl font-medium">Important Dates</p>
                 <ol class="mt-2">
-                    <li>Last date for Paper submission: December 15, 2023</li>
+                    <li>Last date for paper submission: December 15, 2023</li>
                     <li>
                         Communication of acceptance of paper: January 10, 2024
                     </li>
                     <li>Last date for registration: January 25, 2024</li>
-                    <li>Conference Dates: February 8-9, 2024</li>
+                    <li>Conference dates: February 8-9, 2024</li>
                 </ol>
             </div>
             <h1
@@ -131,7 +138,7 @@ import MainLayout from "../layouts/MainLayout.astro";
                 data-aos="fade-up"
             >
                 <p class="my-4 text-xl">
-                    Registration can be done by clicking:
+                    Registration can be here:
                     <a
                         href="https://docs.google.com/forms/d/e/1FAIpQLSfmzCPg_55LPN8dmu3yU9lgiG5or0C7aNLa8z7AKYNpfctrlA/viewform"
                         class="text-blue-800 hover:text-purple-400"
@@ -140,16 +147,18 @@ import MainLayout from "../layouts/MainLayout.astro";
                         ACEF 2024 Submission Link
                     </a>
                 </p>
-                <p class="my-4 text-xl">Travel and Accomodation</p>
+                <p class="my-4 text-xl font-medium">
+                    Travel and accomodation
+                </p>
                 <p>
                     Presenting authors without sufficient funding opportunities
-                    may apply for travel grants. We support roundtrip 3rd AC
+                    may apply for travel grants. We support roundtrip 3<sup>rd</sup>  AC
                     train fare by the shortest route for the presenting author.
                     The conference organizers will take care of the
                     accommodation and food for the presenting author during the
                     two days of the conference.
                 </p>
-                <p class="my-4 text-xl">Mode of the conference</p>
+                <p class="my-4 text-xl font-medium">Mode of the conference</p>
                 <p>
                     Conference will be held in-person at the Department of
                     Economics and Finance, BITS Pilani, Hyderabad Campus.
